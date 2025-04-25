@@ -1,4 +1,4 @@
-#include <Windows.h>
+п»ї#include <Windows.h>
 #include <iostream>
 using namespace std;
 
@@ -19,8 +19,8 @@ void main()
 	cout << endl;
 
 	int Number_of_Shifts;
-	cout << "Введите количество сдвигов влево: "; cin >> Number_of_Shifts;
-	// Цыкличнеский сдвиг массива:
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ РІР»РµРІРѕ: "; cin >> Number_of_Shifts;
+	// Р¦С‹РєР»РёС‡РЅРµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < Number_of_Shifts; i++)
 	{
 		int buffer = arr[0];
@@ -31,7 +31,7 @@ void main()
 		arr[n - 1] = buffer;
 		Sleep(100);
 		system("CLS");
-		// Вывод сдвинутого массива:
+		// Р’С‹РІРѕРґ СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІР°:
 		for (int i = 0; i < n; i++)
 		{
 			cout << arr[i] << tab;
@@ -40,8 +40,8 @@ void main()
 	}
 
 	int Number_of_Shifts_r;
-	cout << "Введите количество сдвигов вправо: "; cin >> Number_of_Shifts_r;
-	// Цыклический сдвиг массива:
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ РІРїСЂР°РІРѕ: "; cin >> Number_of_Shifts_r;
+	// Р¦С‹РєР»РёС‡РµСЃРєРёР№ СЃРґРІРёРі РјР°СЃСЃРёРІР°:
 	for (int i = 0; i < Number_of_Shifts_r; i++)
 	{
 		int buffer = arr[n - 1];
@@ -50,7 +50,7 @@ void main()
 			arr[i + 1] = arr[i];
 		}
 		arr[0] = buffer;
-		// Вывод сдвинутого массива:
+		// Р’С‹РІРѕРґ СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІР°:
 		for (int i = 0; i < n; i++)
 		{
 			cout << arr[i] << tab;
