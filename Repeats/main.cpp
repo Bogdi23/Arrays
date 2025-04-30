@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 #define tab "\t"
@@ -18,7 +18,7 @@ void main()
 	}
 	cout << endl;
 
-	//Ïîèñê ïîâòîðåíèé:
+	//ÐŸÐ¾Ð¸ÑÐº Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð¸Ð¹:
 	for (int i = 0; i < n; i++)
 	{
 		bool met_before = false;
@@ -32,7 +32,7 @@ void main()
 		}
 
 		if (met_before)continue;
-		// Êëþ÷åâîå ñëîâî continue ïðåðûâàåò òåêóùóþ èòåðàöèþ, è ïåðåõîäèò ê ñëåäóþùåé
+		// ÐšÐ»ÑŽÑ‡ÐµÐ²Ð¾Ðµ ÑÐ»Ð¾Ð²Ð¾ continue Ð¿Ñ€ÐµÑ€Ñ‹Ð²Ð°ÐµÑ‚ Ñ‚ÐµÐºÑƒÑ‰ÑƒÑŽ Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸ÑŽ, Ð¸ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð¸Ñ‚ Ðº ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹
 		int count = 0;
 		for (int j = i + 1; j < n; j++)
 		{
@@ -41,6 +41,6 @@ void main()
 				count++;
 			}
 		}
-		if (count > 0) cout << "Çíà÷åíèå " << arr[i] << " ïîâòîðÿåòñÿ " << count << " ðàç\n";
+		if (count > 0) cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·\n";
 	}
 }
