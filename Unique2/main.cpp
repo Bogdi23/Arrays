@@ -1,9 +1,13 @@
 ﻿#include <iostream>
 using namespace std;
 
+//#define NAME
+
 void main()
 {
 	setlocale(LC_ALL, "");
+
+#ifdef NAME
 	const int ROWS = 3;
 	const int COLS = 4;
 	int arr[ROWS][COLS];
@@ -39,4 +43,6 @@ void main()
 		}
 		cout << endl;
 	}
+#endif // NAME
+
 }
